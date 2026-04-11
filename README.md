@@ -1,5 +1,5 @@
 # Self-Hosting - Building A Home Media Server
-Time to set up my home media server with more plans in the future. For now we start small and acquire freedom from big streaming through creating a home media server while leveraging plex as my front end for my content.
+Building a home media server, the setting up the network so my media can be accessed from anywhere.
 
 # Hardware Used
 - KAMRUI Essenx E2 N150 Mini PC
