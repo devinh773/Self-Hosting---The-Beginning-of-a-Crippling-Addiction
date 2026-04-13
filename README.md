@@ -50,8 +50,11 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 
 # Setting up ZimaOS
 - Once the machine has rebooted it will show you the terminal. From here you can view you devices IP address and set a root password by following the on screen instructions.
+- <img width="4284" height="2941" alt="zima" src="https://github.com/user-attachments/assets/889b1a2b-d0f8-406b-bafb-b0f240e34d9e" />
+
 - Type your mini PC's IP address into your browser on the machine you used to create the installtion media. From here you can set up ZimaOS through the web client. This is how the server will be configured and controlled from now on.
-<img width="4284" height="2941" alt="zima" src="https://github.com/user-attachments/assets/889b1a2b-d0f8-406b-bafb-b0f240e34d9e" />
+<img width="1454" height="917" alt="project_zimahome" src="https://github.com/user-attachments/assets/f632a71e-241d-4790-93c7-1d55632b9318" />
+
 
 # Setting up the DAS
 - Now that our server is set up we can take our hard drive and mount it inside of our drive cage.
