@@ -98,9 +98,11 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 - Find your mini PC's name and set the machines IP address to static/reserve.
 <img width="955" height="1089" alt="reserve ip 1" src="https://github.com/user-attachments/assets/21afc3fe-dd6f-471d-af73-5516e6f67985" />
 <img width="954" height="621" alt="reserveip1" src="https://github.com/user-attachments/assets/e7c75624-d408-4d6c-8b9d-4cec12f3bf2f" />
+
 - Navigate to your routers port forwarding settings.
 - Select the server and add the port 32400 and set it to TCP so we have a reliable way to stream our content (If set to TCP/UDP or UDP, your streams may drop frames and audio), this is the default port that plex uses and must be set if you want to access your content when not connected to your network.
 <img width="660" height="500" alt="Screenshot 2026-04-13 at 1 20 40 AM" src="https://github.com/user-attachments/assets/1608b205-b121-4cdd-9012-040ba6a413f4" />
+
 - Open the Plex app from within the ZimaOS client and navigate to the settings.
 - From here navigate to remote access and enable it.
 - If you get an error saying you don't have remote access, manually specify the port as 32400.
