@@ -36,6 +36,7 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 - Download RUFUS on the seperate computer.
 - Download a copy of ZimaOS.
 - Use RUFUS to create the installation media on the flash drive.
+<img width="474" height="539" alt="rufus" src="https://github.com/user-attachments/assets/cf331b22-9f01-4aa6-a5a5-3cfc7638f517" />
 
 - # Installing ZimaOS
 - Plug the USB into the mini pc.
@@ -50,6 +51,7 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 # Setting up ZimaOS
 - Once the machine has rebooted it will show you the terminal. From here you can view you devices IP address and set a root password by following the on screen instructions.
 - Type your mini PC's IP address into your browser on the machine you used to create the installtion media. From here you can set up ZimaOS through the web client. This is how the server will be configured and controlled from now on.
+<img width="4284" height="2941" alt="zima" src="https://github.com/user-attachments/assets/889b1a2b-d0f8-406b-bafb-b0f240e34d9e" />
 
 # Setting up the DAS
 - Now that our server is set up we can take our hard drive and mount it inside of our drive cage.
@@ -63,6 +65,8 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 - Login to the terminal using the login you setup for root.
 - Run: lsblk (this will give you a list of your connected hardware).
 - Look for something like sdb1, this will be the name of you drives USB partition.
+<img width="615" height="1026" alt="lsblk" src="https://github.com/user-attachments/assets/e8cf8893-0000-4349-8710-f45555ee285d" />
+
 - Create a mount point by running: sudo mkdir -p /mnt/usb
 - Next mount the drive by running: sudo mount /dev/sdb1 /mnt/usb
 - Now your drive should be mounted and accessible through the ZimaOS web client.
@@ -71,13 +75,20 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 - Add the IP address of your ZimaOS machine and enter your login info.
 - Now you can access your servers drives with your main machine through the network.
 
+
 # Setting up Plex
 - First access your drives files with the files app within the web client.
+<img width="697" height="653" alt="drivesmedia" src="https://github.com/user-attachments/assets/6deba565-2452-49a6-93a7-e39324caacfd" />
+
 - Add a folder and name it 'Media' then create 3 folders inside named 'Movies', 'TV Shows', and 'Music'.
+<img width="717" height="657" alt="drivesmedia2" src="https://github.com/user-attachments/assets/8d3e843b-33fa-4e61-891a-b4d8237cc2b0" />
+
 - Navigate to the appstore within the ZimaOS web client.
 - Search for Plex and install.
 - Open the Plex App settings before running, ensure that network is set to HOST, and that WEBUI is set to your servers IP and the port to 32400.
 - Under volumes leave the folder that says '/DATA/AppData/plex/config' alone, for the path underneath set the file path the Media folder you just created on your drive.
+<img width="645" height="1232" alt="plexsettings" src="https://github.com/user-attachments/assets/95e38b15-3562-4c14-af42-3d3e570aab22" />
+
 - Now you can add your medias raw files to their respective folders on your drive and plex will automatically pull meta data and sort them within the plex client.
 - Open plex and follow the set up instructions to create your account and preferences.
 
@@ -85,8 +96,13 @@ I chose the KAMRUI Essenx E2 for 4 main reasons:
 - First navigate to your routers admin control page, this can be done by looking at the bottom of your router and typing in the routers IP address into your browsers search bar.
 - Navigate to DHCP Server/ DHCP Reservation tab.
 - Find your mini PC's name and set the machines IP address to static/reserve.
+<img width="955" height="1089" alt="reserve ip 1" src="https://github.com/user-attachments/assets/21afc3fe-dd6f-471d-af73-5516e6f67985" />
+<img width="954" height="621" alt="reserveip1" src="https://github.com/user-attachments/assets/e7c75624-d408-4d6c-8b9d-4cec12f3bf2f" />
 - Navigate to your routers port forwarding settings.
 - Select the server and add the port 32400 and set it to TCP so we have a reliable way to stream our content (If set to TCP/UDP or UDP, your streams may drop frames and audio), this is the default port that plex uses and must be set if you want to access your content when not connected to your network.
+<img width="660" height="500" alt="Screenshot 2026-04-13 at 1 20 40 AM" src="https://github.com/user-attachments/assets/1608b205-b121-4cdd-9012-040ba6a413f4" />
 - Open the Plex app from within the ZimaOS client and navigate to the settings.
 - From here navigate to remote access and enable it.
 - If you get an error saying you don't have remote access, manually specify the port as 32400.
+<img width="1033" height="938" alt="plexremote" src="https://github.com/user-attachments/assets/cb77231b-314e-47b3-b249-28684810e089" />
+
